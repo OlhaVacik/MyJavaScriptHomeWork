@@ -1,13 +1,13 @@
-function con(){
+function con() {
     const a = 10;
     const b = 3;
     let result;
 
-    if (a > b){
+    if (a > b) {
         console.log('a=' + a, 'b=' + b );
         result = "a is bigger";
         console.log(result);
-    } else{
+    } else {
         console.log('a = ' +a, 'b = ', + b);
         result = "a is smaller";
         console.log(result);
@@ -16,7 +16,7 @@ function con(){
 
 con();
 
-function courses(){
+function courses() {
     let login = true;
     let course1 = "JS";
     let course2 = "Python";
@@ -24,14 +24,15 @@ function courses(){
     let region1 = "Ukraine";
     let region2 = "USA";
     let region = region1;
-    if (login == true){
-        if (course == course1){
+
+    if (login == true) {
+        if (course == course1) {
             console.log("Welcome to JS!");
-            if (region == region2){
+            if (region == region2) {
                 console.log("Wake up early!");
             }
         }else console.log("Go to Python");
-    }else{
+    } else {
         console.log("Login is not correct");
     }
 }

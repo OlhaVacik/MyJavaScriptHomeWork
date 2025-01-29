@@ -1,7 +1,7 @@
 {
   "name": "home-work-3",
   "version": "1.0.0",
-  "main": "arifmetics.js",
+  "main": "arithmetics.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint src/",

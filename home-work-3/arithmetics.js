@@ -14,7 +14,7 @@ function sum() {
 
 sum();
 
-function subtraction(){
+function subtraction() {
     const a = 10;
     const b = 5;
     const d = "10";
@@ -30,7 +30,7 @@ function subtraction(){
 
 subtraction();
 
-function multiplication(){
+function multiplication() {
     const a = 8;
     const b = 2;
     const c = a * b;
@@ -40,7 +40,7 @@ function multiplication(){
 
 multiplication();
 
-function division(){
+function division() {
     const a = 16;
     const b = 8;
     const c = a / b;
@@ -50,7 +50,7 @@ function division(){
 
 division();
 
-function remainderFromDivision(){
+function remainderFromDivision() {
     const a = 5;
     const b = 2;
     const c = a % b;
@@ -60,7 +60,7 @@ function remainderFromDivision(){
 
 remainderFromDivision();
 
-function exponentiation(){
+function exponentiation() {
     const a = 2;
     const b = 2;
     const c = a ** b;

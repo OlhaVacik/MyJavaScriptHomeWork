@@ -1,4 +1,4 @@
-function logic(){
+function logic() {
     const a = 3;
     const b = 5;
     const c = "3";

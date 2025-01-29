@@ -1,14 +1,14 @@
-function switchCourses(){
+function switchCourses() {
     const login = true;
     let course = "JS";
     let region = "Ukraine";
 
-    if(!login){
+    if(!login) {
         console.log("Login is not correct");
         return;
-    }
+    };
 
-    switch (course){
+    switch (course) {
         case "JS":
             console.log("Welcome to JS!");
             switch (region) {
@@ -17,7 +17,7 @@ function switchCourses(){
                     break;
             }
 
-            switch (region){
+            switch (region) {
                 case "Ukraine":
                     console.log("Don't be late");
                     break;
@@ -25,13 +25,13 @@ function switchCourses(){
             break;
         case "Python":
             console.log("Go to Python");
-            switch (region){
+            switch (region) {
                 case "USA":
                     console.log("Wake up early!");
                     break;
             }
 
-            switch (region){
+            switch (region) {
                 case "Ukraine":
                     console.log("Don't be late");
                     break;
