@@ -1,14 +1,14 @@
 function con(){
-    let a = 10;
-    let b = 3;
+    const a = 10;
+    const b = 3;
     let result;
 
-    if (a>b){
-        console.log('a=' +a, 'b=' +b );
+    if (a > b){
+        console.log('a=' + a, 'b=' + b );
         result = "a is bigger";
         console.log(result);
     } else{
-        console.log('a=' +a, 'b=', +b);
+        console.log('a = ' +a, 'b = ', + b);
         result = "a is smaller";
         console.log(result);
     }

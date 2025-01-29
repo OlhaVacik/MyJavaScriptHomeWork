@@ -1,18 +1,14 @@
 function switchCourses(){
-    let login = true;
-    let course1 = "JS";
-    let course2 = "Python";
-    let course = course2;
-    let region1 = "Ukraine";
-    let region2 = "USA";
-    let region = region2;
+    const login = true;
+    let course = "JS";
+    let region = "Ukraine";
 
     if(!login){
         console.log("Login is not correct");
         return;
     }
 
-    switch (course) {
+    switch (course){
         case "JS":
             console.log("Welcome to JS!");
             switch (region) {
@@ -20,9 +16,26 @@ function switchCourses(){
                     console.log("Wake up early!");
                     break;
             }
+
+            switch (region){
+                case "Ukraine":
+                    console.log("Don't be late");
+                    break;
+            }
             break;
         case "Python":
             console.log("Go to Python");
+            switch (region){
+                case "USA":
+                    console.log("Wake up early!");
+                    break;
+            }
+
+            switch (region){
+                case "Ukraine":
+                    console.log("Don't be late");
+                    break;
+            }
             break;
         default:
             console.log("Unknown course");
