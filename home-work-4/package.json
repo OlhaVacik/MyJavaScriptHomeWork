@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
-    "build": "npm run lint && <build script>",
+    "build": "npm run lint && <build script>"
   },
   "author": "",
   "license": "ISC",
