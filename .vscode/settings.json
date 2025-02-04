@@ -1,7 +1,9 @@
 {
-    "cSpell.words": [
-        "myjavascripthomework",
-        "Olha",
-        "Vacik"
-    ]
+    "eslint.debug": true,
+    "eslint.format.enable": true,
+    "eslint.run": "onSave",
+    "eslint.workingDirectories": ["./"],
+    
 }
+
+  
