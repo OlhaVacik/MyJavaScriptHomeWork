@@ -22,12 +22,13 @@
     "moduleResolution": "node",                   /* Specify module resolution strategy: 'node' for Node.js. */
     "experimentalDecorators": true,               /* Enable experimental support for decorators. */
     /* Type Checking */
-    "strict": false,                               /* Enable all strict type-checking options. */
-    "noImplicitAny": false,                      /* Enable error reporting for expressions and declarations with an implied 'any' type. Commented it to allow ESlint to warn it instead of error */
+    "strict": true,                               /* Enable all strict type-checking options. */
+    //"noImplicitAny": true,                      /* Enable error reporting for expressions and declarations with an implied 'any' type. Commented it to allow ESlint to warn it instead of error */
     "skipLibCheck": true,                         /* Skip type checking all .d.ts files. */
     "typeRoots": [
       "node_modules/@types"
     ]                                             /* List of folders to include type definitions from. */
   }
 }
+
 
