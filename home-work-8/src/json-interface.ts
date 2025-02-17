@@ -21,15 +21,4 @@ interface Item {
     data: Data | null;
 }
 
-type Result = Item[];
-
-export async function getJson(): Promise<Result> {
-    const response = await fetch('https://api.restful-api.dev/objects');
-    const json = await response.json() as Result;
-    return json;
-}
-
-(async () => {
-    const data = await getJson();
-    console.log(data[0]);
-})();
+export type Result = Partial<Item>[];

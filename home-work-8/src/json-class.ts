@@ -1,5 +1,6 @@
-import {getJson } from './json-interface';
-class DataClass {
+
+
+export class DataClass {
     public color: string;
     public capacity: string | number;
     public price: number;
@@ -23,7 +24,7 @@ class DataClass {
     }
 }
 
-class ResultsClass  {
+export class ResultsClass  {
     public constructor(
         public id: string,
         public name: string,
@@ -46,22 +47,3 @@ class ResultsClass  {
     }
 
 }
-
-
-(async () => {
-    const data1 = await getJson();
-    console.log(data1[2]);
-    console.log(data1[11].data?.Price);
-    const data2 = new ResultsClass('14', 'Apple Watch Series 10', data1.find(item => item.id === '6') ? new DataClass(
-        data1.find(item => item.id === '3')!.data?.color || '',
-        data1.find(item => item.id === '3')!.data?.capacity || '',
-        data1.find(item => item.id === '6')!.data?.price || 0,
-        data1.find(item => item.id === '6')!.data?.generation || '',
-        data1.find(item => item.id === '6')!.data?.year || 0
-    ) : null);
-    data2.sayYourChoice();
-    console.log(data2.lookSomePrices());
-    console.log(data2.name);
-})();
-
-
