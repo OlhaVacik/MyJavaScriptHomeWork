@@ -1,28 +1,23 @@
-import {Formula } from './interfaces';
+import {IFormula } from './interfaces';
 import { Person } from './class-abstract-person';
 
-export class FormulaMaxHR extends Person implements Formula {
+export class FormulaMaxHR extends Person implements IFormula {
     private formulaType: 'standard' | 'tanaka' | 'gelish';
 
     public constructor (name:string, age:number, restingHR: number, formulaType: 'standard' | 'tanaka' | 'gelish') {
         super(name, age, restingHR);
         this.formulaType = formulaType;
-
-
     }
 
     public standardHRmax(): number {
         return  220 - this.age;
-
     }
     public tanakaHRmax(): number {
         return 208 - (0.7 * this.age);
     }
-
     public gelishHRmax(): number {
         return Math.ceil(205.8 - (0.685 * this.age));
     }
-
 
     public maxHR(): number {
         switch  (this.formulaType) {
@@ -42,27 +37,3 @@ export class FormulaMaxHR extends Person implements Formula {
 }
 
 
-export class AdvancedFormulaMaxHR extends Person implements Formula {
-    public constructor (name:string, age:number, restingHR: number) {
-        super(name, age, restingHR);
-    }
-    public standardHRmax(): number {
-        return  215 - this.age;
-
-    }
-    public tanakaHRmax(): number {
-        return 207 - (0.7 * this.age);
-    }
-
-    public gelishHRmax(): number {
-        return 206 - (0.7 * this.age);
-    }
-
-    public maxHR(): number {
-        const allMaxHR = [this.standardHRmax(), this.tanakaHRmax(), this.gelishHRmax()];
-        const advancedMaxHR = allMaxHR.reduce((a: number, b: number) => a + b, 0) / allMaxHR.length;
-        console.log(`Your max heart rate is ${Math.ceil(advancedMaxHR)}`);
-        return Math.ceil(advancedMaxHR);
-    }
-
-}

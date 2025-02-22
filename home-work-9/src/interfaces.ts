@@ -1,11 +1,10 @@
-export interface Formula {
+export interface IFormula {
     standardHRmax(): number;
     tanakaHRmax(): number;
     gelishHRmax(): number;
 }
 
-
-export interface Zones {
+export interface IZones {
     zone1: [number, number];
     zone2: [number, number];
     zone3: [number, number];

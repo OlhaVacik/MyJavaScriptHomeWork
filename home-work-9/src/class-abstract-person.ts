@@ -12,6 +12,7 @@ export abstract class Person {
     public abstract maxHR(): number;
 
     public getHeartRateReserve(): number {
-        return this.maxHR() - this.restingHR;
+        const rateReserve = this.maxHR() - this.restingHR;
+        return  rateReserve;
     }
 }
