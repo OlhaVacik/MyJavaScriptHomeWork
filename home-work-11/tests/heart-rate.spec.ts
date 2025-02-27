@@ -47,13 +47,17 @@ beforeEach(() => {
 
 describe('AthletePerson mock tests', () => {
     test('maxHR() should return correct HRmax using mock', () => {
+
         mockedAthlete.maxHR.mockReturnValue(190);
+
         expect(mockedAthlete.maxHR()).toBe(190);
         expect(mockedAthlete.maxHR).toHaveBeenCalledTimes(1);
     });
 
     test('gelishHRmax() should return 180 with mock', () => {
+
         mockedAthlete.gelishHRmax.mockReturnValue(180);
+
         expect(mockedAthlete.gelishHRmax()).toBe(180);
         expect(mockedAthlete.gelishHRmax).toHaveBeenCalledTimes(1);
     });
@@ -61,7 +65,9 @@ describe('AthletePerson mock tests', () => {
 
 describe('HeartRateZones mock tests', () => {
     test('getHeartRateReserve() should return 50 with mock', () => {
+
         mockedZones.getHeartRateReserve.mockReturnValue(50);
+
         expect(mockedZones.getHeartRateReserve()).toBe(50);
         expect(mockedZones.getHeartRateReserve).toHaveBeenCalledTimes(1);
     });
@@ -69,10 +75,13 @@ describe('HeartRateZones mock tests', () => {
 
 describe('printAllFormula function tests with mocks', () => {
     test('should return correct HRmax formulas output', () => {
+
         mockFormula.gelishHRmax.mockReturnValue(180);
         mockFormula.standardHRmax.mockReturnValue(190);
         mockFormula.tanakaHRmax.mockReturnValue(178);
+
         const result = printAllFormula(mockFormula);
+
         expect(result).toEqual([
             'Your HRmax pulse: 180 Using Gelish Formula',
             'Your HRmax pulse: 190 Using Standard Formula',
@@ -86,7 +95,9 @@ describe('printAllFormula function tests with mocks', () => {
 
 describe('printZones function tests with mocks', () => {
     test('should return correct zone descriptions', () => {
+
         const result = printZones(mockZones);
+
         expect(result).toEqual([
             'The pulse zone 1: 60,100. Light activity zone.',
             'The pulse zone 2: 101,120. Moderate load zone.',
@@ -99,8 +110,11 @@ describe('printZones function tests with mocks', () => {
 
 describe('printReserveRate function tests with mocks', () => {
     test('should return correct reserve heart rate massage', () => {
+
         mockPerson.getHeartRateReserve.mockReturnValue(120);
+
         const result = printReserveRate(mockPerson);
+
         expect(result).toBe('Hi Alice, Your reserve 120.');
         expect(mockPerson.getHeartRateReserve).toHaveBeenCalledTimes(1);
     });
