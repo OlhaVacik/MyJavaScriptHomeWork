@@ -1,0 +1,505 @@
+{
+	"info": {
+		"_postman_id": "6d39c42b-a124-4c92-9ea3-81543c015e72",
+		"name": "TheJokeAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "25067509"
+	},
+	"item": [
+		{
+			"name": "TenRandomJokes",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{TheJokeApiKey}}",
+						"type": "text"
+					}
+				],
+				"url": "{{TheJokeAPIBaseUrl}}/random_ten"
+			},
+			"response": []
+		},
+		{
+			"name": "TypesJokes",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response contains values of the types.\", function () {",
+							"",
+							"    const jsonData = pm.response.json();",
+							"",
+							"    pm.expect(jsonData).to.eql([",
+							"    \"general\",",
+							"    \"knock-knock\",",
+							"    \"programming\",",
+							"    \"dad\"",
+							"]);",
+							"",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{TheJokeApiKey}}",
+						"type": "text"
+					}
+				],
+				"url": "{{TheJokeAPIBaseUrl}}/types"
+			},
+			"response": []
+		},
+		{
+			"name": "CountJokes",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response in json format\", function () {",
+							"     pm.response.to.be.json;",
+							"});",
+							"",
+							"pm.test(\"Response have key 'count'\", function () {",
+							"     pm.expect(pm.response.json()).to.have.property('count');",
+							"});",
+							"",
+							"pm.test(\"The count is a positive number\", function () {",
+							"    const jsonData = pm.response.json();",
+							"",
+							"    pm.expect(jsonData.count).to.be.a(\"number\");",
+							"    pm.expect(jsonData.count).to.be.at.least(0);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{TheJokeApiKey}}",
+						"type": "text"
+					}
+				],
+				"url": "{{TheJokeAPIBaseUrl}}/jokes/count"
+			},
+			"response": []
+		},
+		{
+			"name": "FilterJokesByLength",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Fixed the reference error in the test script",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"",
+							"    const jsonData = pm.response.json();",
+							"",
+							"    pm.expect(jsonData).to.have.property(\"setup\");",
+							"    pm.expect(jsonData).to.have.property(\"punchline\");",
+							"",
+							"    const jokeLength = jsonData.setup.length + jsonData.punchline.length;",
+							"",
+							"    pm.expect(jokeLength).to.be.at.least(50);",
+							"    pm.expect(jokeLength).to.be.at.most(100);",
+							"});",
+							"",
+							"pm.test(\"Status code is 404\", function () {",
+							"    if (pm.response.code === 404) {",
+							"        const jsonData = pm.response.json();",
+							"        pm.expect(jsonData.message).to.eql(\"No jokes found in this length range.\");",
+							"    }",
+							"});",
+							"",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{TheJokeApiKey}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{TheJokeAPIBaseUrl}}/jokes/random/length?min=50&max=100",
+					"host": [
+						"{{TheJokeAPIBaseUrl}}"
+					],
+					"path": [
+						"jokes",
+						"random",
+						"length"
+					],
+					"query": [
+						{
+							"key": "min",
+							"value": "50"
+						},
+						{
+							"key": "max",
+							"value": "100"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddDadJokes",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Successful POST request\", function () {",
+							"",
+							"    pm.expect(pm.response.code).to.be.oneOf([201]);",
+							"});",
+							"",
+							"pm.test(\"Response has a message 'Joke added successfully!'\", function () {",
+							"",
+							"    const jsonData = pm.response.json();",
+							"",
+							"    pm.expect(jsonData.message).to.eql(\"Joke added successfully!\");",
+							"",
+							"});",
+							"",
+							"pm.test(\"Response has a object joke\", function () {",
+							"",
+							"    const jsonData = pm.response.json();",
+							"",
+							"     pm.expect(jsonData).to.have.property(\"joke\")",
+							"",
+							"});",
+							"",
+							"pm.test(\"Response has fields `type`, `setup`, `punchline`\", function () {",
+							"",
+							"    const jsonData = pm.response.json();",
+							"",
+							"    pm.expect(jsonData.joke).to.have.property(\"type\", \"dad\");",
+							"    pm.expect(jsonData.joke).to.have.property(\"setup\");",
+							"    pm.expect(jsonData.joke).to.have.property(\"punchline\");",
+							"",
+							"});",
+							"",
+							"pm.test(\"Generated by id\", function () {",
+							"",
+							"    const jsonData = pm.response.json();",
+							"",
+							"    pm.expect(jsonData.joke).to.have.property(\"id\").that.is.a(\"number\");",
+							"    pm.collectionVariables.set(\"jokeId\", jsonData.joke.id);",
+							"});",
+							"",
+							"pm.test(\"The jokeId is saved\", function () {",
+							"        pm.expect(pm.collectionVariables.get(\"jokeId\")).to.not.be.undefined;",
+							"});",
+							"",
+							"",
+							"",
+							"",
+							"",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{TheJokeApiKey}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"type\": \"dad\",\n  \"setup\": \"My boss said: dress for the job you want, not for the job you have\",\n  \"punchline\": \"So I went in as Batman.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{TheJokeAPIBaseUrl}}/jokes/add"
+			},
+			"response": []
+		},
+		{
+			"name": "SearchDadJokesById",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{TheJokeApiKey}}",
+						"type": "text"
+					},
+					{
+						"key": "joke-id",
+						"value": "{{jokeId}}",
+						"type": "text"
+					}
+				],
+				"url": "{{TheJokeAPIBaseUrl}}/jokes/{{jokeId}}"
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteDadJokes",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Fixed the TypeError by checking if 'jsonData.joke' exists before accessing its 'id' property",
+							"pm.test(\"Successful deleted jokes\", function () {",
+							"    pm.response.to.have.status(200);",
+							"",
+							"    const jsonData = pm.response.json();",
+							"    if (jsonData.joke) {",
+							"        pm.collectionVariables.set(\"deletedJokeId\", jsonData.joke.id);",
+							"    }",
+							"    pm.expect(jsonData).to.have.property(\"message\", \"Joke deleted successfully!\");",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{TheJokeApiKey}}",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"type\": \"dad\",\n  \"setup\": \"My boss said: dress for the job you want, not for the job you have\",\n  \"punchline\": \"So I went in as Batman.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{TheJokeAPIBaseUrl}}/jokes/{{jokeId}}"
+			},
+			"response": []
+		},
+		{
+			"name": "SearchDadJokesByIdAfterDelete",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Deleted joke not found.\", function () {",
+							"    pm.response.to.have.status(404);",
+							"",
+							"    const jsonData = pm.response.json();",
+							"    ",
+							"    pm.expect(jsonData).to.have.property(\"message\", \"joke not found\");",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{TheJokeApiKey}}",
+						"type": "text"
+					}
+				],
+				"url": "{{TheJokeAPIBaseUrl}}/jokes/{{delete-id}}"
+			},
+			"response": []
+		},
+		{
+			"name": "ChangeJokesById",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{TheJokeApiKey}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"setup\": \"Why do coders always mix up Christmas and Halloween?\",\n  \"punchline\": \"Because Oct 31 == Dec 25.\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{TheJokeAPIBaseUrl}}/jokes/1"
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteJokes",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{TheJokeApiKey}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"setup\": \"Why do coders always mix up Christmas and Halloween?\",\n  \"punchline\": \"Because Oct 31 == Dec 25.\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{TheJokeAPIBaseUrl}}/jokes/1"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "TheJokeAPIBaseUrl",
+			"value": "localhost:3005",
+			"type": "string"
+		},
+		{
+			"key": "TheJokeApiKey",
+			"value": "my-secret-key-123",
+			"type": "string"
+		},
+		{
+			"key": "joke-id",
+			"value": "{{jokeId}}",
+			"type": "string"
+		},
+		{
+			"key": "jokeId",
+			"value": "",
+			"disabled": true
+		},
+		{
+			"key": "delete-id",
+			"value": "{{deletedJokeId}}",
+			"type": "string"
+		},
+		{
+			"key": "jokeId",
+			"value": ""
+		}
+	]
+}
