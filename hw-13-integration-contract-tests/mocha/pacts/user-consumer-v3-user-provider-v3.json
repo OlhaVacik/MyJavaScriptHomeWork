@@ -1,0 +1,94 @@
+{
+    "consumer": {
+      "name": "user-consumer-v3"
+    },
+    "provider": {
+      "name": "user-provider-v3"
+    },
+    "interactions": [
+      {
+        "description": "A request to create a new user with list",
+        "providerStates": [
+          {
+            "name": "User 'TestName' does not exist"
+          }
+        ],
+        "request": {
+          "method": "POST",
+          "path": "/user/createWithList",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "body": [
+            {
+              "id": 12345,
+              "username": "TestName",
+              "firstName": "John",
+              "lastName": "Doe",
+              "email": "forexample@gmail.com",
+              "password": "Password123!",
+              "phone": "123456789",
+              "userStatus": 1
+            }
+          ]
+        },
+        "response": {
+          "status": 200,
+          "headers": {
+            "Content-Type": "application/json"
+          },
+          "body": {
+            "code": 200,
+            "type": "unknown",
+            "message": "ok"
+          }
+        }
+      },
+      {
+        "description": "A request to get user details",
+        "providerStates": [
+          {
+            "name": "User 'TestName' exists"
+          }
+        ],
+        "request": {
+          "method": "GET",
+          "path": "/user/TestName",
+          "headers": {
+            "accept": "application/json"
+          }
+        },
+        "response": {
+          "status": 200,
+          "headers": {
+            "Content-Type": "application/json"
+          },
+          "body": {
+            "id": 12345,
+            "username": "TestName",
+            "firstName": "John",
+            "lastName": "Doe",
+            "email": "forexample@gmail.com",
+            "password": "Password123!",
+            "phone": "123456789",
+            "userStatus": 1
+          }
+        }
+      }
+    ],
+    "metadata": {
+      "pactSpecification": {
+        "version": "3.0.0"
+      },
+      "pact-js": {
+        "version": "14.0.0"
+      },
+      "pactRust": {
+        "ffi": "0.4.22",
+        "models": "1.2.3"
+      }
+    }
+  }
+
+  
