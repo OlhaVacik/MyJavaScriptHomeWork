@@ -17,7 +17,6 @@ export class DealsPage {
 
     private get clearance(): ChainablePromiseElement {
         return $('//span[@class="styles_wrapper__YYaWP" and text()="Clearance"]');
-
     }
 
     public async clickTopDeals(): Promise<void> {
@@ -26,7 +25,7 @@ export class DealsPage {
 
     public async isTopDealsPageDisplayed(): Promise<boolean> {
         return (await $('//h1[text()="Top Deals"]'))
-            .waitForDisplayed({timeout: 5000})
+            .isDisplayed()
             .then(() => true)
             .catch(() => false);
     }
@@ -37,7 +36,7 @@ export class DealsPage {
 
     public async isTargetCircleDealsPageDisplayed(): Promise<boolean> {
         return (await $('//div[h1[text()="Target Circle™ Deals"]]'))
-            .waitForDisplayed({timeout: 5000})
+            .isDisplayed()
             .then(() => true)
             .catch(() => false);
     }
@@ -48,7 +47,7 @@ export class DealsPage {
 
     public async isWeeklyAdPageDisplayed(): Promise<boolean> {
         return (await $('//div[@data-test="global-header"]//div[h2[text()="Weekly Ad "]]'))
-            .waitForDisplayed({timeout: 5000})
+            .isDisplayed()
             .then(() => true)
             .catch(() => false);
     }
@@ -59,10 +58,8 @@ export class DealsPage {
 
     public async isClearancePageDisplayed(): Promise<boolean> {
         return (await $('//div[@data-component-id="WEB-c_web_pagetitle_v01"]//div[h1[text()="Clearance"]]'))
-            .waitForDisplayed({timeout: 5000})
+            .isDisplayed()
             .then(() => true)
             .catch(() => false);
     }
 }
-
-export default new DealsPage();

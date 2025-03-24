@@ -8,12 +8,11 @@ export class HomePage {
 
     public async open(): Promise<void> {
         await browser.url('https://www.target.com/');
+        await this.dealsMenu.waitForExist();
     }
 
     public async clickDealMenu(): Promise<void> {
-        await this.dealsMenu.waitForExist();
         await this.dealsMenu.click();
     }
 
 }
-export default new HomePage();
