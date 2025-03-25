@@ -1,94 +1,226 @@
 {
-    "consumer": {
-      "name": "user-consumer-v3"
-    },
-    "provider": {
-      "name": "user-provider-v3"
-    },
-    "interactions": [
-      {
-        "description": "A request to create a new user with list",
-        "providerStates": [
+  "consumer": {
+    "name": "user-consumer-v3"
+  },
+  "interactions": [
+    {
+      "description": "A request to create a new user",
+      "providerStates": [
+        {
+          "name": "user interaction"
+        }
+      ],
+      "request": {
+        "body": [
           {
-            "name": "User 'TestName' does not exist"
+            "email": "string",
+            "firstName": "string",
+            "id": 0,
+            "lastName": "string",
+            "password": "string",
+            "phone": "string",
+            "userStatus": 0,
+            "username": "string"
           }
         ],
-        "request": {
-          "method": "POST",
-          "path": "/user/createWithList",
-          "headers": {
-            "accept": "application/json",
-            "Content-Type": "application/json"
-          },
-          "body": [
-            {
-              "id": 12345,
-              "username": "TestName",
-              "firstName": "John",
-              "lastName": "Doe",
-              "email": "forexample@gmail.com",
-              "password": "Password123!",
-              "phone": "123456789",
-              "userStatus": 1
-            }
-          ]
+        "headers": {
+          "Accept": "application/json",
+          "Content-Type": "application/json"
         },
-        "response": {
-          "status": 200,
-          "headers": {
-            "Content-Type": "application/json"
-          },
-          "body": {
-            "code": 200,
-            "type": "unknown",
-            "message": "ok"
-          }
-        }
+        "method": "POST",
+        "path": "/v2/user/createWithList"
       },
-      {
-        "description": "A request to get user details",
-        "providerStates": [
-          {
-            "name": "User 'TestName' exists"
-          }
-        ],
-        "request": {
-          "method": "GET",
-          "path": "/user/TestName",
-          "headers": {
-            "accept": "application/json"
-          }
+      "response": {
+        "body": {
+          "code": 200,
+          "message": "ok",
+          "type": "unknown"
         },
-        "response": {
-          "status": 200,
-          "headers": {
-            "Content-Type": "application/json"
-          },
-          "body": {
-            "id": 12345,
-            "username": "TestName",
-            "firstName": "John",
-            "lastName": "Doe",
-            "email": "forexample@gmail.com",
-            "password": "Password123!",
-            "phone": "123456789",
-            "userStatus": 1
-          }
-        }
+        "headers": {
+          "Content-Type": "application/json",
+          "content-Type": "application/json"
+        },
+        "status": 200
       }
-    ],
-    "metadata": {
-      "pactSpecification": {
-        "version": "3.0.0"
+    },
+    {
+      "description": "A request to create a new user",
+      "providerStates": [
+        {
+          "name": "user interaction"
+        }
+      ],
+      "request": {
+        "body": [
+          {
+            "email": "string",
+            "firstName": "string",
+            "id": 0,
+            "lastName": "string",
+            "password": "string",
+            "phone": "string",
+            "userStatus": 0,
+            "username": "string"
+          }
+        ],
+        "headers": {
+          "Accept": "application/json",
+          "Content-Type": "application/json"
+        },
+        "method": "POST",
+        "path": "/v2/user/createWithList"
       },
-      "pact-js": {
-        "version": "14.0.0"
+      "response": {
+        "body": {
+          "code": 200,
+          "message": "ok",
+          "type": "unknown"
+        },
+        "headers": {
+          "Content-Type": "application/json",
+          "content-Type": "application/json"
+        },
+        "status": 200
+      }
+    },
+    {
+      "description": "A request to get user details",
+      "providerStates": [
+        {
+          "name": "User 'user1' exists"
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "path": "/v2/user/user1"
       },
-      "pactRust": {
-        "ffi": "0.4.22",
-        "models": "1.2.3"
+      "response": {
+        "body": {
+          "email": "string",
+          "firstName": "string",
+          "id": 0,
+          "lastName": "string",
+          "password": "string",
+          "phone": "string",
+          "userStatus": 0,
+          "username": "string"
+        },
+        "headers": {
+          "Content-Type": "application/json",
+          "content-type": "application/json"
+        },
+        "matchingRules": {
+          "body": {
+            "$": {
+              "combine": "AND",
+              "matchers": [
+                {
+                  "match": "type"
+                }
+              ]
+            }
+          },
+          "header": {},
+          "status": {}
+        },
+        "status": 200
+      }
+    },
+    {
+      "description": "A request to get user details",
+      "providerStates": [
+        {
+          "name": "User 'user1' exists"
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "path": "/v2/user/user1"
+      },
+      "response": {
+        "body": {
+          "email": "string",
+          "firstName": "string",
+          "id": 0,
+          "lastName": "string",
+          "password": "string",
+          "phone": "string",
+          "userStatus": 0,
+          "username": "string"
+        },
+        "headers": {
+          "Content-Type": "application/json",
+          "content-type": "application/json"
+        },
+        "matchingRules": {
+          "body": {
+            "$": {
+              "combine": "AND",
+              "matchers": [
+                {
+                  "match": "type"
+                }
+              ]
+            }
+          },
+          "header": {},
+          "status": {}
+        },
+        "status": 200
+      }
+    },
+    {
+      "description": "get a user",
+      "request": {
+        "method": "GET",
+        "path": "/v2/user/TestName"
+      },
+      "response": {
+        "body": {
+          "email": "forexample@gmail.com",
+          "firstName": "John",
+          "id": 12345,
+          "lastName": "Doe",
+          "password": "Password123!",
+          "phone": "123456789",
+          "userStatus": 1,
+          "username": "TestName"
+        },
+        "headers": {
+          "Content-Type": "application/json",
+          "content-type": "application/json"
+        },
+        "matchingRules": {
+          "body": {
+            "$": {
+              "combine": "AND",
+              "matchers": [
+                {
+                  "match": "type"
+                }
+              ]
+            }
+          },
+          "header": {},
+          "status": {}
+        },
+        "status": 200
       }
     }
+  ],
+  "metadata": {
+    "pact-js": {
+      "version": "14.0.0"
+    },
+    "pactRust": {
+      "ffi": "0.4.22",
+      "models": "1.2.3"
+    },
+    "pactSpecification": {
+      "version": "3.0.0"
+    }
+  },
+  "provider": {
+    "name": "user-provider-v3"
   }
-
-  
+}
