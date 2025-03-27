@@ -24,10 +24,7 @@ export class DealsPage {
     }
 
     public async isTopDealsPageDisplayed(): Promise<boolean> {
-        return (await $('//h1[text()="Top Deals"]'))
-            .isDisplayed()
-            .then(() => true)
-            .catch(() => false);
+        return (await $('//h1[text()="Top Deals"]')).isDisplayed();
     }
 
     public async clickTargetCircleDeals(): Promise<void> {
@@ -35,10 +32,7 @@ export class DealsPage {
     }
 
     public async isTargetCircleDealsPageDisplayed(): Promise<boolean> {
-        return (await $('//div[h1[text()="Target Circle™ Deals"]]'))
-            .isDisplayed()
-            .then(() => true)
-            .catch(() => false);
+        return (await $('//div[h1[text()="Target Circle™ Deals"]]')).isDisplayed();
     }
 
     public async clickWeeklyAd(): Promise<void> {
@@ -46,10 +40,7 @@ export class DealsPage {
     }
 
     public async isWeeklyAdPageDisplayed(): Promise<boolean> {
-        return (await $('//div[@data-test="global-header"]//div[h2[text()="Weekly Ad "]]'))
-            .isDisplayed()
-            .then(() => true)
-            .catch(() => false);
+        return (await $('//div[@data-test="global-header"]//div[h2[text()="Weekly Ad "]]')).isDisplayed();
     }
 
     public async clickClearance(): Promise<void> {
@@ -57,9 +48,6 @@ export class DealsPage {
     }
 
     public async isClearancePageDisplayed(): Promise<boolean> {
-        return (await $('//div[@data-component-id="WEB-c_web_pagetitle_v01"]//div[h1[text()="Clearance"]]'))
-            .isDisplayed()
-            .then(() => true)
-            .catch(() => false);
+        return (await $('//div[@data-component-id="WEB-c_web_pagetitle_v01"]//div[h1[text()="Clearance"]]')).isDisplayed();
     }
 }
