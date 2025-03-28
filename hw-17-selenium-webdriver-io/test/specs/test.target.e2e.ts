@@ -31,13 +31,13 @@ describe('Target Website Tests', () => {
         await homePage.clickDealMenu();
         await dealsPage.clickWeeklyAd();
 
-        expect(await dealsPage.isWeeklyAdPageDisplayed()).toBeDisplayed(true);
+        expect(await dealsPage.isWeeklyAdPageDisplayed()).toBeDisplayed();
     });
 
     it('TC-4: Verify clicking "Clearance" redirects correctly', async () => {
         await homePage.clickDealMenu();
         await dealsPage.clickClearance();
 
-        expect(await dealsPage.isClearancePageDisplayed()).toBeDisplayed(true);
+        expect(await dealsPage.isClearancePageDisplayed()).toBeDisplayed();
     });
 });
