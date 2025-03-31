@@ -18,7 +18,6 @@ export class DealsPage {
 
     private get clearance(): Locator {
         return this.page.locator('//span[@class="styles_wrapper__YYaWP" and text()="Clearance"]');
-
     }
 
     private get topDealsHeader(): Locator {

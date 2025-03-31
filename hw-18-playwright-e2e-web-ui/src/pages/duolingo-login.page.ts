@@ -54,7 +54,6 @@ export class DuolingoLoginPage {
 
         console.log('[login] Clicking login button');
         await this.loginButton.click();
-        await this.page.pause();
 
         await this.myAccountHome.waitFor({state: 'visible', timeout: 10000});
 

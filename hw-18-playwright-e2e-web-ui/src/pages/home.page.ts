@@ -1,5 +1,4 @@
 import { Locator, BrowserContext, Page } from '@playwright/test';
-import * as fs from 'fs';
 
 export class HomePage {
     private get dealsMenu(): Locator {
@@ -16,8 +15,5 @@ export class HomePage {
     public async goToDealMenu(): Promise<void> {
         await this.open();
         await this.dealsMenu.click();
-
-        const browserState = await this.context.storageState();
-        fs.writeFileSync('browser-context.json', JSON.stringify(browserState, null, 2));
     }
 }
