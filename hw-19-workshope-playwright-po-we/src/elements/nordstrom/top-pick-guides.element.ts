@@ -8,11 +8,10 @@ export class NordstromTopPickGuidesElement {
     public constructor(private baseLocator: Locator) {}
 
     public async getGuidesNames(): Promise<string[]> {
-        const guideItems = this.guideLink;
+        await this.baseLocator.waitFor({ state: 'visible', timeout: 8000 });
+        await this.guideLink.first().waitFor({state: 'visible', timeout: 5000});
 
-        await guideItems.first().waitFor({state: 'visible', timeout: 5000});
-
-        const guides = await guideItems.all();
+        const guides = await this.guideLink.all();
 
         const guideNames: string[] = [];
 

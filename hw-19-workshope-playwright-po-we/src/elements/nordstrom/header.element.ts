@@ -14,16 +14,16 @@ export class NordstromHeaderElement {
         return this.baseLocator.locator('div>div>div');
     }
 
-    private get siteNavigate(): Locator {
+    private get tabForSiteNavigation(): Locator {
         return this.baseLocator.locator('nav>ul>li');
     }
 
     public constructor(private baseLocator: Locator) {}
 
-    public async getHeadersNames(): Promise<string[]> {
+    public async getTabsNames(): Promise<string[]> {
         const tabNames: string[] = [];
 
-        const tabs = await this.siteNavigate.all();
+        const tabs = await this.tabForSiteNavigation.all();
 
         for (const tab of tabs) {
             const text = await tab.textContent();
@@ -39,13 +39,13 @@ export class NordstromHeaderElement {
         return tabNames;
     }
 
-    public async selectHeader(tabName: string): Promise<void> {
-        const tabNames = await this.getHeadersNames();
+    public async selectTab(tabName: string): Promise<void> {
+        const tabNames = await this.getTabsNames();
         if (!tabNames.includes(tabName)) {
             throw new Error(`Tab with name "${tabName}" not found.`);
         }
 
-        const tabs = await this.siteNavigate.all();
+        const tabs = await this.tabForSiteNavigation.all();
         await tabs[tabNames.indexOf(tabName)].click();
     }
 }

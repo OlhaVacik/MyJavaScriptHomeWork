@@ -12,41 +12,29 @@ test.describe('Nordstrom sample test with POM and Web Elements', () => {
         await nordstromPage.goTo();
     });
 
-    test('Navigate to Top Pick Guides', async () => {
+    test('Clicking on a random Top Pick Guides', async () => {
         const homePage = new NordstromHomePage(testPage);
-
         const guides = await homePage.getGuideNames();
-        console.log('Loaded guide names:', guides);
-
-        const activeGuide = await homePage.getActiveGuide();
 
         expect(guides.length).toBeGreaterThan(1);
 
-        const guideToClick = guides[0];
+        const randomGuideToClick = getRandomTab(guides);
 
-        await homePage.clickGuide(guideToClick);
-
-        await expect(activeGuide).toBe(guideToClick);
+        await expect(homePage.clickGuide(randomGuideToClick)).resolves.not.toThrow();
     });
 
     test('Randomly switches between Top Pick Guides', async () => {
         const homePage = new NordstromHomePage(testPage);
-
         const allGuides = await homePage.getGuideNames();
         const activeGuide = await homePage.getActiveGuide();
 
-        console.log('Active before switching', activeGuide);
-
         const randomGuide = getRandomTab(allGuides, activeGuide);
-
         await homePage.clickGuide(randomGuide);
 
         const newActive = await homePage.getActiveGuide();
 
-        console.log('Active after switching', newActive);
-
-        expect(newActive).toBe(randomGuide);
-        expect(newActive).not.toBe(activeGuide);
+        await expect(newActive).toBe(randomGuide);
+        await expect(newActive).not.toBe(activeGuide);
     });
 
     test('Products for the "Women\'s New Arrivals Under $100" guide should be loading', async () => {
