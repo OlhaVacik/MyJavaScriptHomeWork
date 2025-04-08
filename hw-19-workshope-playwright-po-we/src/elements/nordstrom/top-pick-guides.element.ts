@@ -2,18 +2,24 @@ import { expect, Locator } from '@playwright/test';
 
 export class NordstromTopPickGuidesElement {
     private get guideLink(): Locator {
-        return this.baseLocator.locator('ul>li');
+        return this.baseLocator.locator('nav>ul>li');
+    }
+
+    private get topPicksHeader(): Locator {
+        return this.baseLocator.locator('h2', {hasText: 'Top Picks for You'});
     }
 
     public constructor(private baseLocator: Locator) {}
 
+    public async getTopPicksHeader(): Promise<void> {
+        await this.topPicksHeader.scrollIntoViewIfNeeded();
+        await expect(this.topPicksHeader).toBeVisible({ timeout: 8000 });
+    }
+
     public async getGuidesNames(): Promise<string[]> {
-        await this.baseLocator.waitFor({ state: 'visible', timeout: 8000 });
-        await this.guideLink.first().waitFor({state: 'visible', timeout: 5000});
+        const guideNames: string[] = [];
 
         const guides = await this.guideLink.all();
-
-        const guideNames: string[] = [];
 
         for (const guide of guides) {
             const text = await guide.textContent();
@@ -38,10 +44,9 @@ export class NordstromTopPickGuidesElement {
     }
 
     public async getActiveGuideName(): Promise<string> {
-        const activeTab = this.baseLocator.locator('ul>li.ZgHf6.CtGs9');
+        const activeTab = this.baseLocator.locator('nav>ul>li.ZgHf6.CtGs9');
 
-        await activeTab.scrollIntoViewIfNeeded();
-        await expect(activeTab).toBeVisible({ timeout: 5000 });
+        await expect(activeTab).toBeVisible();
 
         const text = await activeTab.textContent();
         return text?.trim() ?? '';

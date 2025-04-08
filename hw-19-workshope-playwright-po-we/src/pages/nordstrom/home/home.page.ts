@@ -13,7 +13,7 @@ export class NordstromHomePage extends NordstromBasePage {
 
     public constructor(page: Page) {
         super(page);
-        this.nordstromTopPickGuidesElement = new NordstromTopPickGuidesElement(this.page.locator('div.dls-ihm460>nav'));
+        this.nordstromTopPickGuidesElement = new NordstromTopPickGuidesElement(this.page.locator('div#product-recommendations-shelf-hp-story-path-sub-1'));
     }
 
     public async getGuideNames(): Promise<string[]> {
@@ -29,8 +29,6 @@ export class NordstromHomePage extends NordstromBasePage {
     }
 
     public async getTopPicksItemsByGuide(guideName: string): Promise<ItemDetailsPageModel[]> {
-        await this.page.locator('h2:has-text("Top Picks for You")').scrollIntoViewIfNeeded();
-        await this.page.locator('h2:has-text("Top Picks for You")').waitFor({ state: 'visible', timeout: 8000 });
         await this.nordstromTopPickGuidesElement.selectGuide(guideName);
 
         const summaryItems = await this.summaryIcon.all();
