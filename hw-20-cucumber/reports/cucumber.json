@@ -1,0 +1,370 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "nordstrom-cucumber.js-autotests;user-is-able-to-open-nordstrom-web-site",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "User is able to open Nordstrom web-site",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 55833260
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 924057274
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user is on the Nordstrom homepage",
+            "match": {
+              "location": "file:/Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-20-cucumber/src/steps/nordstrom.steps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 702782
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "the user navigates to the Nordstrom homepage",
+            "match": {
+              "location": "file:/Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-20-cucumber/src/steps/nordstrom.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13282456215
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the user is able to see its top pick content",
+            "match": {
+              "location": "file:/Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-20-cucumber/src/steps/nordstrom.steps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 451019
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 394068396
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 45585465
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "nordstrom-cucumber.js-autotests;clicking-on-a-random-top-pick-guide",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Clicking on a random Top Pick Guide",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 49682285
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 364326446
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user is on the Nordstrom homepage",
+            "match": {
+              "location": "file:/Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-20-cucumber/src/steps/nordstrom.steps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 191894
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "the user selects a random guide from Top Picks",
+            "match": {
+              "location": "file:/Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-20-cucumber/src/steps/nordstrom.steps.ts:28"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 42456050,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n    at Proxy.<anonymous> (/Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-20-cucumber/node_modules/playwright/lib/matchers/expect.js:254:37)\n    at RobotDreamsWorld.<anonymous> (file:///Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-20-cucumber/src/steps/nordstrom.steps.ts:31:31)\n    at fulfilled (file:///Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-20-cucumber/src/steps/nordstrom.steps.ts:4:58)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the guide should open without an error",
+            "match": {
+              "location": "file:/Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-20-cucumber/src/steps/nordstrom.steps.ts:36"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 33719593
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 13318271
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "nordstrom-cucumber.js-autotests;randomly-switching-between-top-picks-guides",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Randomly switching between Top Picks Guides",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 5433000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 365867621
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user is on the Nordstrom homepage",
+            "match": {
+              "location": "file:/Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-20-cucumber/src/steps/nordstrom.steps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 119954
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "the user sees a currently active guide",
+            "match": {
+              "location": "file:/Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-20-cucumber/src/steps/nordstrom.steps.ts:44"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 31418989,
+              "error_message": "Error: Active guide with class CtGs9 not found\n    at NordstromTopPickGuidesElement.<anonymous> (file:///Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-20-cucumber/src/elements/nordstrom/top-pick-guides.element.ts:64:19)\n    at fulfilled (file:///Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-20-cucumber/src/elements/nordstrom/top-pick-guides.element.ts:4:58)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "the user clicks on a different random guide",
+            "match": {
+              "location": "file:/Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-20-cucumber/src/steps/nordstrom.steps.ts:50"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "the new guide should become active",
+            "match": {
+              "location": "file:/Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-20-cucumber/src/steps/nordstrom.steps.ts:59"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "it should not be the same as the previous open",
+            "match": {
+              "location": "file:/Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-20-cucumber/src/steps/nordstrom.steps.ts:65"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 20188546
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 26220616
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "nordstrom-cucumber.js-autotests;\"women's-new-arrivals-under-$100\"-guide-displays-products",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "\"Women's New Arrivals Under $100\" guide displays products",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 5353901
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 346199118
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user is on the Nordstrom homepage",
+            "match": {
+              "location": "file:/Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-20-cucumber/src/steps/nordstrom.steps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 116873
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "the user activates the guide",
+            "match": {
+              "location": "file:/Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-20-cucumber/src/steps/nordstrom.steps.ts:72"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 37998652,
+              "error_message": "Error: Tab with name \"Women's New Arrivals Under $100\" not found.\n    at NordstromTopPickGuidesElement.<anonymous> (file:///Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-20-cucumber/src/elements/nordstrom/top-pick-guides.element.ts:47:23)\n    at fulfilled (file:///Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-20-cucumber/src/elements/nordstrom/top-pick-guides.element.ts:4:58)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "the products should be displayed with prices",
+            "match": {
+              "location": "file:/Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-20-cucumber/src/steps/nordstrom.steps.ts:78"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 15494885
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 29112918
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "nordstrom-cucumber.js-autotests",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Nordstrom Cucumber.js Autotests",
+    "tags": [],
+    "uri": "features/nordstrom.feature"
+  }
+]

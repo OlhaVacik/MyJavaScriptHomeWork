@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<testsuite name="Cucumber" time="18.013" tests="4" skipped="0" failures="3" errors="0" timestamp="2025-04-11T22:08:52.027Z">
+  <testcase classname="Nordstrom Cucumber.js Autotests" name="User is able to open Nordstrom web-site" time="14.753">
+    <system-out><![CDATA[Given the user is on the Nordstrom homepage.................................passed
+When the user navigates to the Nordstrom homepage...........................passed
+Then the user is able to see its top pick content...........................passed]]></system-out>
+  </testcase>
+  <testcase classname="Nordstrom Cucumber.js Autotests" name="Clicking on a random Top Pick Guide" time="0.511">
+    <failure type="Error" message="[2mexpect([22m[31mreceived[39m[2m).[22mtoBeGreaterThan[2m([22m[32mexpected[39m[2m)[22m&#xA;&#xA;Expected: > [32m0[39m&#xA;Received:   [31m0[39m"><![CDATA[    at Proxy.<anonymous> (/Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-20-cucumber/node_modules/playwright/lib/matchers/expect.js:254:37)
+    at RobotDreamsWorld.<anonymous> (file:///Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-20-cucumber/src/steps/nordstrom.steps.ts:31:31)
+    at fulfilled (file:///Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-20-cucumber/src/steps/nordstrom.steps.ts:4:58)]]></failure>
+    <system-out><![CDATA[Given the user is on the Nordstrom homepage.................................passed
+When the user selects a random guide from Top Picks.........................failed
+Then the guide should open without an error.................................skipped]]></system-out>
+  </testcase>
+  <testcase classname="Nordstrom Cucumber.js Autotests" name="Randomly switching between Top Picks Guides" time="0.451">
+    <failure type="Error" message="Active guide with class CtGs9 not found"><![CDATA[    at NordstromTopPickGuidesElement.<anonymous> (file:///Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-20-cucumber/src/elements/nordstrom/top-pick-guides.element.ts:64:19)
+    at fulfilled (file:///Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-20-cucumber/src/elements/nordstrom/top-pick-guides.element.ts:4:58)]]></failure>
+    <system-out><![CDATA[Given the user is on the Nordstrom homepage.................................passed
+Given the user sees a currently active guide................................failed
+When the user clicks on a different random guide............................skipped
+Then the new guide should become active.....................................skipped
+Then it should not be the same as the previous open.........................skipped]]></system-out>
+  </testcase>
+  <testcase classname="Nordstrom Cucumber.js Autotests" name="&quot;Women's New Arrivals Under $100&quot; guide displays products" time="0.436">
+    <failure type="Error" message="Tab with name &quot;Women's New Arrivals Under $100&quot; not found."><![CDATA[    at NordstromTopPickGuidesElement.<anonymous> (file:///Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-20-cucumber/src/elements/nordstrom/top-pick-guides.element.ts:47:23)
+    at fulfilled (file:///Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-20-cucumber/src/elements/nordstrom/top-pick-guides.element.ts:4:58)]]></failure>
+    <system-out><![CDATA[Given the user is on the Nordstrom homepage.................................passed
+When the user activates the guide...........................................failed
+Then the products should be displayed with prices...........................skipped]]></system-out>
+  </testcase>
+</testsuite>
