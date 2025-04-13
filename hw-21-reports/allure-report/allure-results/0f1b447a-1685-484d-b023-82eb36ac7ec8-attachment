@@ -1,0 +1,473 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Duolingo Login >> Duolingo Login With Email
+- Location: /Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-21-reports/allure-report/tests/setup/duolingo-login.spec.ts:5:9
+
+# Error details
+
+```
+TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('//a[@data-test="home-nav"]') to be visible
+
+    at DuolingoLoginPage.loginWithEmail (/Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-21-reports/allure-report/src/pages/duolingo-login.page.ts:58:34)
+    at /Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-21-reports/allure-report/tests/setup/duolingo-login.spec.ts:9:9
+```
+
+# Page snapshot
+
+```yaml
+- banner:
+  - navigation:
+    - link "Duolingo":
+      - img "Duolingo"
+    - 'button "Site language: English"'
+  - img
+  - heading "The free, fun, and effective way to learn a language!" [level=1]
+  - link "Get started"
+  - button "I ALREADY HAVE AN ACCOUNT"
+  - navigation:
+    - img
+    - list:
+      - listitem:
+        - link "English":
+          - img
+          - text: English
+      - listitem:
+        - link "Spanish":
+          - img
+          - text: Spanish
+      - listitem:
+        - link "French":
+          - img
+          - text: French
+      - listitem:
+        - link "German":
+          - img
+          - text: German
+      - listitem:
+        - link "Italian":
+          - img
+          - text: Italian
+      - listitem:
+        - link "Portuguese":
+          - img
+          - text: Portuguese
+      - listitem:
+        - link "Dutch":
+          - img
+          - text: Dutch
+      - listitem:
+        - link "Japanese":
+          - img
+          - text: Japanese
+      - listitem:
+        - link "Arabic":
+          - img
+          - text: Arabic
+      - listitem:
+        - link "Czech":
+          - img
+          - text: Czech
+      - listitem:
+        - link "Welsh":
+          - img
+          - text: Welsh
+      - listitem:
+        - link "Danish":
+          - img
+          - text: Danish
+      - listitem:
+        - link "Greek":
+          - img
+          - text: Greek
+      - listitem:
+        - link "Esperanto":
+          - img
+          - text: Esperanto
+      - listitem:
+        - link "Finnish":
+          - img
+          - text: Finnish
+      - listitem:
+        - link "Irish":
+          - img
+          - text: Irish
+      - listitem:
+        - link "Scottish Gaelic":
+          - img
+          - text: Scottish Gaelic
+      - listitem:
+        - link "Hebrew":
+          - img
+          - text: Hebrew
+      - listitem:
+        - link "Hindi":
+          - img
+          - text: Hindi
+      - listitem:
+        - link "Haitian Creole":
+          - img
+          - text: Haitian Creole
+      - listitem:
+        - link "Hungarian":
+          - img
+          - text: Hungarian
+      - listitem:
+        - link "High Valyrian":
+          - img
+          - text: High Valyrian
+      - listitem:
+        - link "Hawaiian":
+          - img
+          - text: Hawaiian
+      - listitem:
+        - link "Indonesian":
+          - img
+          - text: Indonesian
+      - listitem:
+        - link "Korean":
+          - img
+          - text: Korean
+      - listitem:
+        - link "Latin":
+          - img
+          - text: Latin
+      - listitem:
+        - link "Norwegian (Bokmål)":
+          - img
+          - text: Norwegian (Bokmål)
+      - listitem:
+        - link "Navajo":
+          - img
+          - text: Navajo
+      - listitem:
+        - link "Polish":
+          - img
+          - text: Polish
+      - listitem:
+        - link "Romanian":
+          - img
+          - text: Romanian
+      - listitem:
+        - link "Russian":
+          - img
+          - text: Russian
+      - listitem:
+        - link "Swedish":
+          - img
+          - text: Swedish
+      - listitem:
+        - link "Swahili":
+          - img
+          - text: Swahili
+      - listitem:
+        - link "Klingon":
+          - img
+          - text: Klingon
+      - listitem:
+        - link "Turkish":
+          - img
+          - text: Turkish
+      - listitem:
+        - link "Ukrainian":
+          - img
+          - text: Ukrainian
+      - listitem:
+        - link "Vietnamese":
+          - img
+          - text: Vietnamese
+      - listitem:
+        - link "Yiddish":
+          - img
+          - text: Yiddish
+      - listitem:
+        - link "Chinese":
+          - img
+          - text: Chinese
+      - listitem:
+        - link "Zulu":
+          - img
+          - text: Zulu
+    - img
+- main:
+  - heading "free. fun. effective." [level=2]
+  - paragraph:
+    - text: Learning with Duolingo is fun, and
+    - link "research shows that it works"
+    - text: "! With quick, bite-sized lessons, you’ll earn points and unlock new levels while gaining real-world communication skills."
+  - heading "backed by science" [level=2]
+  - paragraph: We use a combination of research-backed teaching methods and delightful content to create courses that effectively teach reading, writing, listening, and speaking skills!
+  - heading "stay motivated" [level=2]
+  - paragraph: We make it easy to form a habit of language learning with game-like features, fun challenges, and reminders from our friendly mascot, Duo the owl.
+  - heading "personalized learning" [level=2]
+  - paragraph: Combining the best of AI and language science, lessons are tailored to help you learn at just the right level and pace.
+  - heading "learn anytime, anywhere" [level=1]
+  - link "badge-app-store Download on the App Store":
+    - img "badge-app-store"
+    - text: Download on the App Store
+  - link "badge-app-store Get it on Google Play":
+    - img "badge-app-store"
+    - text: Get it on Google Play
+  - img
+  - img "Super Duolingo"
+  - button "Try 2 weeks for free"
+  - heading "duolingo english test" [level=2]
+  - paragraph: Our convenient, fast, and affordable English test integrates the latest assessment science and AI — empowering anyone to accurately test their English where and when they’re at their best.
+  - link "Certify your English"
+  - heading "duolingo for schools" [level=2]
+  - paragraph: Teachers, we’re here to help you! Our free tools support your students as they learn languages through the Duolingo app, both in and out of the classroom.
+  - link "Get your class started"
+  - heading "duolingo abc" [level=2]
+  - paragraph: From language to literacy! With fun phonics lessons and delightful stories, Duolingo ABC helps kids ages 3–8 learn to read and write — 100% free.
+  - link "Learn more about ABC"
+  - heading "duolingo math" [level=2]
+  - paragraph: Our free, bite-sized approach — but for math! Fun lessons help students get ahead in their math classes, while adults can brain train to boost their mental math skills.
+  - link "Get better at Math"
+  - heading "learn a language with duolingo" [level=1]
+  - link "Get started"
+  - img
+- contentinfo:
+  - text: About us
+  - list:
+    - listitem:
+      - link "Courses"
+    - listitem:
+      - link "Mission"
+    - listitem:
+      - link "Approach"
+    - listitem:
+      - link "Efficacy"
+    - listitem:
+      - link "Duolingo Handbook"
+    - listitem:
+      - link "Research"
+    - listitem:
+      - link "Careers"
+    - listitem:
+      - link "Brand guidelines"
+    - listitem:
+      - link "Store"
+    - listitem:
+      - link "Press"
+    - listitem:
+      - link "Investors"
+    - listitem:
+      - link "Contact us"
+  - text: Products
+  - list:
+    - listitem:
+      - link "Duolingo"
+    - listitem:
+      - link "Duolingo for Schools"
+    - listitem:
+      - link "Duolingo English Test"
+    - listitem:
+      - link "Duolingo Math"
+    - listitem:
+      - link "Podcast"
+    - listitem:
+      - link "Duolingo for Business"
+    - listitem:
+      - link "Super Duolingo"
+    - listitem:
+      - link "Gift Super Duolingo"
+    - listitem:
+      - link "Duolingo Max"
+  - text: Apps
+  - list:
+    - listitem:
+      - link "Duolingo for Android"
+    - listitem:
+      - link "Duolingo for iOS"
+  - text: Help and support
+  - list:
+    - listitem:
+      - link "Duolingo FAQs"
+    - listitem:
+      - link "Schools FAQs"
+    - listitem:
+      - link "Duolingo English Test FAQs"
+    - listitem:
+      - link "Status"
+  - text: Privacy and terms
+  - list:
+    - listitem:
+      - link "Community guidelines"
+    - listitem:
+      - link "Terms"
+    - listitem:
+      - link "Privacy"
+    - listitem:
+      - link "Respecting your \"do not sell my personal information\" rights"
+  - text: Social
+  - list:
+    - listitem:
+      - link "Blog"
+    - listitem:
+      - link "Instagram"
+    - listitem:
+      - link "TikTok"
+    - listitem:
+      - link "Twitter"
+    - listitem:
+      - link "YouTube"
+  - separator
+  - text: "Site language:"
+  - list:
+    - listitem:
+      - link "العربية"
+    - listitem:
+      - link "বাংলা"
+    - listitem:
+      - link "Čeština"
+    - listitem:
+      - link "Deutsch"
+    - listitem:
+      - link "Ελληνικά"
+    - listitem:
+      - link "English"
+    - listitem:
+      - link "Español"
+    - listitem:
+      - link "Français"
+    - listitem:
+      - link "हिंदी"
+    - listitem:
+      - link "Magyar"
+    - listitem:
+      - link "Bahasa Indonesia"
+    - listitem:
+      - link "Italiano"
+    - listitem:
+      - link "日本語"
+    - listitem:
+      - link "한국어"
+    - listitem:
+      - link "Nederlands"
+    - listitem:
+      - link "Polski"
+    - listitem:
+      - link "Português"
+    - listitem:
+      - link "Română"
+    - listitem:
+      - link "Русский"
+    - listitem:
+      - link "svenska"
+    - listitem:
+      - link "தமிழ்"
+    - listitem:
+      - link "తెలుగు"
+    - listitem:
+      - link "ภาษาไทย"
+    - listitem:
+      - link "Tagalog"
+    - listitem:
+      - link "Türkçe"
+    - listitem:
+      - link "Українською"
+    - listitem:
+      - link "Tiếng Việt"
+    - listitem:
+      - link "中文"
+- img
+- button "Sign up"
+- heading "Looks like your account was created with Google!" [level=1]
+- text: U
+- button "Continue with Google Sign in with Google Button":
+  - img
+  - text: Continue with Google
+- text: Use another account By signing in to Duolingo, you agree to our
+- link "Terms"
+- text: and
+- link "Privacy Policy"
+- text: . This site is protected by reCAPTCHA Enterprise and the Google
+- link "Privacy Policy"
+- text: and
+- link "Terms of Service"
+- text: apply.
+```
+
+# Test source
+
+```ts
+   1 | import { BrowserContext, Locator, Page, expect } from '@playwright/test';
+   2 | import * as fs from 'fs';
+   3 |
+   4 | export class DuolingoLoginPage {
+   5 |     private get duolingoLogo(): Locator {
+   6 |         return this.page.locator('//*[@id="root"]/div[1]/header/div[1]/nav/a/img');
+   7 |     }
+   8 |
+   9 |     private get haveAccountButton(): Locator {
+  10 |         return this.page.locator('//button[@data-test="have-account"]');
+  11 |     }
+  12 |
+  13 |     private get emailInput(): Locator {
+  14 |         return this.page.locator('//input[@data-test="email-input"]');
+  15 |     }
+  16 |
+  17 |     private get passwordInput(): Locator {
+  18 |         return this.page.locator('//input[@data-test="password-input"]');
+  19 |     }
+  20 |
+  21 |     private get loginButton(): Locator {
+  22 |         return this.page.locator('//button[@data-test="register-button"]');
+  23 |     }
+  24 |
+  25 |     private get myAccountHome(): Locator {
+  26 |         return this.page.locator('//a[@data-test="home-nav"]');
+  27 |     }
+  28 |
+  29 |     public constructor(private page: Page, private context: BrowserContext) {}
+  30 |
+  31 |     public async clearCookies(): Promise<void> {
+  32 |         console.log('[clear Cookies] Clearing all cookies and storage data');
+  33 |         await this.context.clearCookies();
+  34 |         await this.context.clearPermissions();
+  35 |         console.log('[clearCookies] Done');
+  36 |     }
+  37 |
+  38 |     public async goto(): Promise<void> {
+  39 |         await this.page.goto('https://www.duolingo.com/');
+  40 |         await this.duolingoLogo.waitFor({state: 'visible', timeout: 10000});
+  41 |     }
+  42 |
+  43 |     public async loginWithEmail(username: string, password: string): Promise<void> {
+  44 |         console.log('[login] Navigating to Duolingo');
+  45 |         await this.goto();
+  46 |
+  47 |         await this.haveAccountButton.click();
+  48 |
+  49 |         console.log('[login] Filling in email');
+  50 |         await this.emailInput.fill(username);
+  51 |
+  52 |         console.log('[login] Filling in password');
+  53 |         await this.passwordInput.fill(password);
+  54 |
+  55 |         console.log('[login] Clicking login button');
+  56 |         await this.loginButton.click();
+  57 |
+> 58 |         await this.myAccountHome.waitFor({state: 'visible', timeout: 10000});
+     |                                  ^ TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+  59 |
+  60 |         console.log('[login] Saving browser storage state');
+  61 |         const browserState = await this.context.storageState();
+  62 |         fs.writeFileSync('browser-context.json', JSON.stringify(browserState, null, 2));
+  63 |
+  64 |         console.log('[login] Login flow complete');
+  65 |     }
+  66 |
+  67 |     public async expectLoggedIn(): Promise<void> {
+  68 |         await expect(this.myAccountHome).toBeVisible();
+  69 |     }
+  70 | }
+  71 |
+```

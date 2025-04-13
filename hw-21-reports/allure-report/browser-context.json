@@ -1,0 +1,320 @@
+{
+  "cookies": [
+    {
+      "name": "sapphire",
+      "value": "1",
+      "domain": ".target.com",
+      "path": "/",
+      "expires": 1747110677.143903,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "TealeafAkaSid",
+      "value": "TzKtf5bkia5QNKDXFrjVjoxaoeq88DDO",
+      "domain": ".target.com",
+      "path": "/",
+      "expires": 1747072939.843479,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "GuestLocation",
+      "value": "33186|25.660|-80.410|FL|US",
+      "domain": "www.target.com",
+      "path": "/",
+      "expires": 1744567331.144205,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "visitorId",
+      "value": "01962B2A8B230201A232157F74133759",
+      "domain": ".target.com",
+      "path": "/",
+      "expires": 1779040931.143966,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "UserLocation",
+      "value": "33186|25.660|-80.410|FL|US",
+      "domain": ".target.com",
+      "path": "/",
+      "expires": 1776016934,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "egsSessionId",
+      "value": "eed32c9b-1013-41b9-a5e4-4eab92574ba5",
+      "domain": ".target.com",
+      "path": "/",
+      "expires": 1744484535.051684,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "accessToken",
+      "value": "eyJraWQiOiJlYXMyIiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiIwNWViNGRkYS04ZDg1LTRiOGItYWZiYi1kNGMwY2E5YWZjZmMiLCJpc3MiOiJNSTYiLCJleHAiOjE3NDQ1NjczMzUsImlhdCI6MTc0NDQ4MDkzNSwianRpIjoiVEdULjk1ZTlkYzgyOTcxYjRmYmI5NGY5ZTQ0MDQ1MDA0YTBhLWwiLCJza3kiOiJlYXMyIiwic3V0IjoiRyIsImRpZCI6ImE4ZjEyMmJjNjQxMzcxNWM5MGMwMWYzYjI0MTI1NWNjMGQ1MjAwNmM3YjlkN2NkYzkxZDk5MTg0NTI1YjhhOTUiLCJzY28iOiJlY29tLm5vbmUsb3BlbmlkIiwiY2xpIjoiZWNvbS13ZWItMS4wLjAiLCJhc2wiOiJMIn0.ZQj56gb8jfb8xN5j8S9gjfWmzL9oG3ByLovE1aJdTzGR9skVC1WyEJ9nMTSphgxmUn7iTnI71_YvzdkS8EMwiC-yhmdLnGIymM3ONxhs88hirrQHO7nmpJC44eSyadqpXoMdarhhDCIW6pxSdNJ0uqEBIGQoq5YC-orUQk-pkm18i88xcpXyIxJ4bKGTfnYt9fIbMv4KZTRGPikIQY-VtaBKK2ckZovrAcv9KIgcPNmNr55HMIF455fA1Lbbbv-RTZw1PzK8I6xccuFL-UhQE5IzzAO3Rpp6bJRPjoAmJgwYyTdxBKbkQSF4TyMnwtM6Ng6_PyRWT8To-ROXPWvZLA",
+      "domain": ".target.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "idToken",
+      "value": "eyJhbGciOiJub25lIn0.eyJzdWIiOiIwNWViNGRkYS04ZDg1LTRiOGItYWZiYi1kNGMwY2E5YWZjZmMiLCJpc3MiOiJNSTYiLCJleHAiOjE3NDQ1NjczMzUsImlhdCI6MTc0NDQ4MDkzNSwiYXNzIjoiTCIsInN1dCI6IkciLCJjbGkiOiJlY29tLXdlYi0xLjAuMCIsInBybyI6eyJmbiI6bnVsbCwiZm51IjpudWxsLCJlbSI6bnVsbCwicGgiOmZhbHNlLCJsZWQiOm51bGwsImx0eSI6ZmFsc2UsInN0IjoiRkwiLCJzbiI6bnVsbH19.",
+      "domain": ".target.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "refreshToken",
+      "value": "Rm_hnE_FTyoes_4U4nByVaNQojJsdWg9pif8wAb3MOAAxiijkLcBp2iq_L4atdsAtCEz_uoF4VFOPjt7hDJDUg",
+      "domain": ".target.com",
+      "path": "/",
+      "expires": 1760032935.051854,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "adScriptData",
+      "value": "FL",
+      "domain": ".target.com",
+      "path": "/",
+      "expires": 1744567335.051886,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_tgt_session",
+      "value": "630e69060dc74021ad630a2cd2998106.2a00dab8f2437d6748470cf54daec4a3e322264c82a57f5c00624a7c14386b4f09018676dd913f6d3a88356b3d2e9afb97ddefd233a92694ae48f36dee9d498c3d5fc174c9bbb0f1c22156c71820e5988b6d16134af52fec357d17dae491576b09577e4df61fcce085f1d89b6bbcb22db7ad42a782932b3e5eadf9556f5af2a38dd20ba7161dcd94fac4dd3d43acc4620ce7e50319f2ce3883a2211bc9b56c0f8fa11f84c14ef69eb97abfa31dca1be2f4467b8cfc913ecce92046eb6d6f51d043c139e0479a56debd93254b17e7c4022e6f3e0227f0de67d719da31e5cf2558e4.0x6cb502dc6cb4dc851354ae26b3e50e06b9ff6ed440dcbcb7f6961dba0402dfb6",
+      "domain": "redsky.target.com",
+      "path": "/",
+      "expires": 1744567336.699622,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__gads",
+      "value": "ID=4f8d6d054a36f9a1:T=1744480936:RT=1744480936:S=ALNI_MYBtlega0kVuHwiwdBRWl6zahvISg",
+      "domain": ".target.com",
+      "path": "/",
+      "expires": 1778176936,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__gpi",
+      "value": "UID=0000109286799c82:T=1744480936:RT=1744480936:S=ALNI_MY0P5i9DGRf4SPZIQw0kmi6s--JrA",
+      "domain": ".target.com",
+      "path": "/",
+      "expires": 1778176936,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__eoi",
+      "value": "ID=c8e8510d23a00138:T=1744480936:RT=1744480936:S=AA-AfjauG5TDmvwHKWO_1I_tVt1M",
+      "domain": ".target.com",
+      "path": "/",
+      "expires": 1760032936,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ffsession",
+      "value": "{%22sessionHash%22:%224561c0b3e81901744480934346%22%2C%22prevPageName%22:%22home%20page%22%2C%22prevPageType%22:%22home%20page%22%2C%22prevPageUrl%22:%22https://www.target.com/%22%2C%22sessionHit%22:1}",
+      "domain": ".target.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "sddStore",
+      "value": "DSI_746|DSN_Kendall|DSZ_33186",
+      "domain": ".target.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "fiatsCookie",
+      "value": "DSI_746|DSN_Kendall|DSZ_33196",
+      "domain": ".target.com",
+      "path": "/",
+      "expires": 1776016937,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ci_pixmgr",
+      "value": "other",
+      "domain": ".target.com",
+      "path": "/",
+      "expires": 1747072938,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "IDE",
+      "value": "AHWqTUnMfN3Ke27RR0jtt-XRZDNlJJ7c4O4XqSfBMTwOyraj0O6GPkRWwxOOGdrILHM",
+      "domain": ".doubleclick.net",
+      "path": "/",
+      "expires": 1779040938.883492,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "APC",
+      "value": "AfxxVi7TthFihCoppMmgHNmPuZ0H9SA_ABPhs6jn6mXgUkwkjIqmZw",
+      "domain": ".doubleclick.net",
+      "path": "/",
+      "expires": 1760032939.440016,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "receive-cookie-deprecation",
+      "value": "1",
+      "domain": ".doubleclick.net",
+      "path": "/",
+      "expires": 1760032939.440317,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "kampyle_userid",
+      "value": "fb14-ecb7-f572-afb2-c782-3476-ebaf-797c",
+      "domain": "www.target.com",
+      "path": "/",
+      "expires": 1776016940,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "kampyleUserSession",
+      "value": "1744480940836",
+      "domain": "www.target.com",
+      "path": "/",
+      "expires": 1776016940,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "kampyleUserSessionsCount",
+      "value": "1",
+      "domain": "www.target.com",
+      "path": "/",
+      "expires": 1776016940,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "kampyleUserPercentile",
+      "value": "39.349388630861796",
+      "domain": "www.target.com",
+      "path": "/",
+      "expires": 1776016940,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "kampyleSessionPageCounter",
+      "value": "2",
+      "domain": "www.target.com",
+      "path": "/",
+      "expires": 1776016942,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://www.target.com",
+      "localStorage": [
+        {
+          "name": "kampyle_userid",
+          "value": "fb14-ecb7-f572-afb2-c782-3476-ebaf-797c"
+        },
+        {
+          "name": "kampyleUserPercentile",
+          "value": "39.349388630861796"
+        },
+        {
+          "name": "tgt.webStore.initialZipCodeUsedForFiatsCookie",
+          "value": "{\"value\":\"33186\",\"expiry\":31536000000}"
+        },
+        {
+          "name": "kampyleUserSessionsCount",
+          "value": "1"
+        },
+        {
+          "name": "kampyleSessionPageCounter",
+          "value": "2"
+        },
+        {
+          "name": "gads_privacy_sandbox_tcf_hash",
+          "value": "2020403198"
+        },
+        {
+          "name": "l_FTzyeq12rr",
+          "value": "17444809344242152740132"
+        },
+        {
+          "name": "goog:cached:topics",
+          "value": "[null,1744480936290,3]"
+        },
+        {
+          "name": "FTzyeq12rr",
+          "value": "A_qOKiuWAQAAcUMXCAraxWVIpTF8Q0PH5a9Tshq3bGc3sJY1fTqCrVU2O2SCAUWiSFquckX5wH8AAEB3AAAAAA=="
+        },
+        {
+          "name": "kampyleUserSession",
+          "value": "1744480940836"
+        }
+      ]
+    },
+    {
+      "origin": "https://www.google.com",
+      "localStorage": [
+        {
+          "name": "rc::h",
+          "value": "1744480941746"
+        }
+      ]
+    }
+  ]
+}

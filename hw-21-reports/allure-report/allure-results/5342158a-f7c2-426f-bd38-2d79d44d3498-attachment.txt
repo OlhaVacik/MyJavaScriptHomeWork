@@ -1,0 +1,9 @@
+[login] Navigating to Ford
+[login] Checking if already logged in...
+[login] Waiting for popup sign-in button
+[login] Filling in email
+[login] Filling in password
+[login] Clicking login button
+[login] Waiting for MyAccount to confirm login
+[login] Saving browser storage state
+[login] Login flow complete

@@ -1,0 +1,6 @@
+[clear Cookies] Clearing all cookies and storage data
+[clearCookies] Done
+[login] Navigating to Duolingo
+[login] Filling in email
+[login] Filling in password
+[login] Clicking login button

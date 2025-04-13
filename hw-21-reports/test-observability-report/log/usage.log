@@ -1,0 +1,41 @@
+2025-04-12 18:29:51 - [32minfo[39m: Creating configuration file...
+2025-04-12 18:29:51 - [32minfo[39m: Adding new script(s) in package.json...
+2025-04-12 18:29:51 - [32minfo[39m: Setup completed
+2025-04-12 18:47:20 - [32minfo[39m: Running SDK with args /Users/olha/.nvm/versions/node/v23.6.1/bin/node /Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-21-reports/test-observability-report/node_modules/.bin/browserstack-node-sdk playwright --config ./browserstack.yml
+2025-04-12 18:48:40 - [32minfo[39m: Running SDK with args /Users/olha/.nvm/versions/node/v23.6.1/bin/node /Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-21-reports/test-observability-report/node_modules/.bin/browserstack-node-sdk playwright
+2025-04-12 18:50:02 - [32minfo[39m: Running SDK with args /Users/olha/.nvm/versions/node/v23.6.1/bin/node /Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-21-reports/test-observability-report/node_modules/.bin/browserstack-node-sdk playwright test sample --project=chromium
+2025-04-12 18:50:02 - [32minfo[39m: Reading configs from /Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-21-reports/test-observability-report/browserstack.yml
+2025-04-12 18:50:02 - [32minfo[39m: SDK run started with id: 7bc3f39b-4776-4bae-8c45-ab69aec55fc6
+2025-04-12 18:50:03 - [32minfo[39m: Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+2025-04-12 18:51:09 - [32minfo[39m: Local binary started successfully
+2025-04-12 18:51:13 - [32minfo[39m: Testhub started with id: ooyx5om66gwapqswb49gawfpvsfhzysh7m9lr4rk
+2025-04-12 18:51:20 - [32minfo[39m: Visit https://observability.browserstack.com/builds/ooyx5om66gwapqswb49gawfpvsfhzysh7m9lr4rk to view build report, insights, and many more debugging information all at one place!
+
+2025-04-12 18:51:21 - [32minfo[39m: SDK run ended for id: 7bc3f39b-4776-4bae-8c45-ab69aec55fc6, testhub id: ooyx5om66gwapqswb49gawfpvsfhzysh7m9lr4rk
+2025-04-12 18:51:23 - [32minfo[39m: Deleting /Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-21-reports/test-observability-report/playwright-browserstack-sdk.config.ts
+2025-04-12 18:51:26 - [32minfo[39m: Local binary stopped
+2025-04-13 11:33:54 - [32minfo[39m: Running SDK with args /Users/olha/.nvm/versions/node/v23.6.1/bin/node /Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-21-reports/test-observability-report/node_modules/.bin/browserstack-node-sdk playwright test
+2025-04-13 11:33:54 - [32minfo[39m: Reading configs from /Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-21-reports/test-observability-report/browserstack.yml
+2025-04-13 11:33:54 - [32minfo[39m: SDK run started with id: 1e754d55-ed32-4a7f-abbc-c1d6fbb8ec5a
+2025-04-13 11:33:54 - [32minfo[39m: Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+2025-04-13 11:33:59 - [32minfo[39m: Local binary started successfully
+2025-04-13 11:34:05 - [32minfo[39m: Testhub started with id: xpxkfxgdlimb1crvaifp8zhkspcdi9ax8waosq4s
+2025-04-13 11:36:06 - [32minfo[39m: Shutdown triggered by SIGINT
+2025-04-13 11:36:06 - [32minfo[39m: Visit https://observability.browserstack.com/builds/xpxkfxgdlimb1crvaifp8zhkspcdi9ax8waosq4s to view build report, insights, and many more debugging information all at one place!
+
+2025-04-13 11:36:06 - [32minfo[39m: View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/b6758a12536ef72606c8b932443f8f97be0cb36d
+2025-04-13 11:36:07 - [32minfo[39m: SDK run ended for id: 1e754d55-ed32-4a7f-abbc-c1d6fbb8ec5a, testhub id: xpxkfxgdlimb1crvaifp8zhkspcdi9ax8waosq4s
+2025-04-13 11:36:10 - [32minfo[39m: Deleting /Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-21-reports/test-observability-report/playwright-browserstack-sdk.config.ts
+2025-04-13 11:36:13 - [32minfo[39m: Local binary stopped
+2025-04-13 11:50:11 - [32minfo[39m: Running SDK with args /Users/olha/.nvm/versions/node/v23.6.1/bin/node /Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-21-reports/test-observability-report/node_modules/.bin/browserstack-node-sdk playwright test
+2025-04-13 11:50:11 - [32minfo[39m: Reading configs from /Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-21-reports/test-observability-report/browserstack.yml
+2025-04-13 11:50:11 - [32minfo[39m: SDK run started with id: 824e8310-4b9b-4c03-b653-9dbeeefb0ba4
+2025-04-13 11:50:13 - [32minfo[39m: Testhub started with id: jlygmqwbshxeopughmpvvratp5avtsamvufkfmr9
+2025-04-13 11:55:44 - [32minfo[39m: Running SDK with args /Users/olha/.nvm/versions/node/v23.6.1/bin/node /Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-21-reports/test-observability-report/node_modules/.bin/browserstack-node-sdk playwright test
+2025-04-13 11:55:44 - [32minfo[39m: Reading configs from /Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-21-reports/test-observability-report/browserstack.yml
+2025-04-13 11:55:44 - [32minfo[39m: SDK run started with id: 2a5273d4-b10e-49a8-9c7a-75f1084af6a3
+2025-04-13 11:55:47 - [32minfo[39m: Testhub started with id: yodrz25keubae2my99yup2ifu1sihngdvsav2tdc
+2025-04-13 12:08:27 - [32minfo[39m: Running SDK with args /Users/olha/.nvm/versions/node/v23.6.1/bin/node /Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-21-reports/test-observability-report/node_modules/.bin/browserstack-node-sdk playwright test
+2025-04-13 12:08:27 - [32minfo[39m: Reading configs from /Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-21-reports/test-observability-report/browserstack.yml
+2025-04-13 12:08:27 - [32minfo[39m: SDK run started with id: 54405b1c-9471-4bb7-89eb-cd1689702581
+2025-04-13 12:08:30 - [32minfo[39m: Testhub started with id: hencqzwnd4dcovuac8yyvr7vlbcwj42zqo9f9hlu

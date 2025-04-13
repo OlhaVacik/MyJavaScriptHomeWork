@@ -1,0 +1,20 @@
+userName: olgavatsyk_jMZckf
+accessKey: YzPu79SE4c94j43rkdVq
+projectName: Playwright E2E Test
+buildName: Playwright E2E Test build
+buildIdentifier: '#4'
+CUSTOM_TAG_1: My custom build tag
+browserstackLocal: true
+debug: false
+networkLogs: false
+consoleLogs: errors
+testObservability: true
+browserstackAutomation: false
+platforms: []
+testContextOptions:
+  skipSessionStatus: true
+  skipSessionName: true
+browserStackLocalOptions:
+  localIdentifier: 13_Apr_1208_MacBook-Pro-Olha.local_vs6h
+  skipBinaryInitialisation: false
+proxySettings: {}

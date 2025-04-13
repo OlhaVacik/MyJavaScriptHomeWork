@@ -1,0 +1,379 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Target Website Tests >> TC-3: Verify clicking "Weekly Ad" redirects correctly
+- Location: /Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-21-reports/allure-report/tests/target/target-e2e-test.spec.ts:27:9
+
+# Error details
+
+```
+TimeoutError: locator.waitFor: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator('//div[@data-test="global-header"]//div[h2[text()="Weekly Ad "]]') to be visible
+
+    at DealsPage.goToWeeklyAd (/Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-21-reports/allure-report/src/pages/deals.page.ts:67:35)
+    at /Users/olha/my-home-work-js/MyJavaScriptHomeWork/hw-21-reports/allure-report/tests/target/target-e2e-test.spec.ts:32:9
+```
+
+# Page snapshot
+
+```yaml
+- link "skip to main content"
+- link "skip to footer"
+- 'button "Ship to location: 33186"':
+  - img
+  - text: Ship to 33186
+- 'button "Store: Kendall"':
+  - img
+  - text: Kendall
+- link "Target Circle™"
+- link "Target Circle™ Card"
+- link "Target Circle 360™"
+- link "Registry & Wish List"
+- link "Weekly Ad"
+- link "Find Stores"
+- link "Target home":
+  - img
+- link "Categories":
+  - text: Categories
+  - img
+- link "Deals":
+  - text: Deals
+  - img
+- link "New & featured":
+  - text: New & featured
+  - img
+- link "pickup and delivery":
+  - text: Pickup & delivery
+  - img
+- searchbox "What can we help you find? suggestions appear below"
+- button "search by voice"
+- button "search"
+- link "Account, sign in":
+  - img
+  - text: Sign in
+  - img
+- link "cart 0 items":
+  - img
+- img
+- heading "Weekly Ad" [level=1]
+- list:
+  - listitem:
+    - link "Apr 6 - Apr 12 - 1 of 2 - selected": Apr 6 - Apr 12
+  - listitem:
+    - link "Sneak Peek - 2 of 2": Sneak Peek
+- searchbox "Search Weekly Ad"
+- button "search":
+  - text: search
+  - img
+- button "Browse By Category":
+  - text: Browse By Category
+  - img
+- listitem:
+  - button "View Page 1 Offers - Clothing, Shoes & Accessories,NIT,Clothing, Shoes & Accessories":
+    - img "Clothing, Shoes & Accessories,NIT,Clothing, Shoes & Accessories"
+  - button "Expand Weekly Ad Image for Page 1 - Clothing, Shoes & Accessories,NIT,Clothing, Shoes & Accessories":
+    - img
+- listitem:
+  - button "View Page 2 Offers - Clothing, Shoes & Accessories,Clothing, Shoes & Accessories,NIT":
+    - img "Clothing, Shoes & Accessories,Clothing, Shoes & Accessories,NIT"
+  - button "Expand Weekly Ad Image for Page 2 - Clothing, Shoes & Accessories,Clothing, Shoes & Accessories,NIT":
+    - img
+- listitem:
+  - button "View Page 3 Offers - Clothing, Shoes & Accessories,Clothing, Shoes & Accessories,NIT":
+    - img "Clothing, Shoes & Accessories,Clothing, Shoes & Accessories,NIT"
+  - button "Expand Weekly Ad Image for Page 3 - Clothing, Shoes & Accessories,Clothing, Shoes & Accessories,NIT":
+    - img
+- listitem:
+  - button "View Page 4 Offers - Clothing, Shoes & Accessories":
+    - img "Clothing, Shoes & Accessories"
+  - button "Expand Weekly Ad Image for Page 4 - Clothing, Shoes & Accessories":
+    - img
+- listitem:
+  - button "View Page 5 Offers - Clothing, Shoes & Accessories":
+    - img "Clothing, Shoes & Accessories"
+  - button "Expand Weekly Ad Image for Page 5 - Clothing, Shoes & Accessories":
+    - img
+- listitem:
+  - button "View Page 6 Offers - Clothing, Shoes & Accessories":
+    - img "Clothing, Shoes & Accessories"
+  - button "Expand Weekly Ad Image for Page 6 - Clothing, Shoes & Accessories":
+    - img
+- listitem:
+  - button "View Page 7 Offers - Sporting Goods,Toys":
+    - img "Sporting Goods,Toys"
+  - button "Expand Weekly Ad Image for Page 7 - Sporting Goods,Toys":
+    - img
+- listitem:
+  - button "View Page 8 Offers - Sporting Goods":
+    - img "Sporting Goods"
+  - button "Expand Weekly Ad Image for Page 8 - Sporting Goods":
+    - img
+- listitem:
+  - button "View Page 9 Offers - Toys":
+    - img "Toys"
+  - button "Expand Weekly Ad Image for Page 9 - Toys":
+    - img
+- listitem:
+  - button "View Page 10 Offers - Toys":
+    - img "Toys"
+  - button "Expand Weekly Ad Image for Page 10 - Toys":
+    - img
+- listitem:
+  - button "View Page 11 Offers - Toys":
+    - img "Toys"
+  - button "Expand Weekly Ad Image for Page 11 - Toys":
+    - img
+- listitem:
+  - button "View Page 12 Offers - Entertainment":
+    - img "Entertainment"
+  - button "Expand Weekly Ad Image for Page 12 - Entertainment":
+    - img
+- listitem:
+  - button "View Page 13 Offers - Pets":
+    - img "Pets"
+  - button "Expand Weekly Ad Image for Page 13 - Pets":
+    - img
+- listitem:
+  - button "View Page 14 Offers - company messaging":
+    - img "company messaging"
+  - button "Expand Weekly Ad Image for Page 14 - company messaging":
+    - img
+- listitem:
+  - button "View Page 15 Offers - SNC":
+    - img "SNC"
+  - button "Expand Weekly Ad Image for Page 15 - SNC":
+    - img
+- listitem:
+  - button "View Page 16 Offers - Grocery,Grocery,Beverage":
+    - img "Grocery,Grocery,Beverage"
+  - button "Expand Weekly Ad Image for Page 16 - Grocery,Grocery,Beverage":
+    - img
+- listitem:
+  - button "View Page 17 Offers - Grocery,Grocery,Beverage":
+    - img "Grocery,Grocery,Beverage"
+  - button "Expand Weekly Ad Image for Page 17 - Grocery,Grocery,Beverage":
+    - img
+- listitem:
+  - button "View Page 18 Offers - Grocery,Grocery,SNC":
+    - img "Grocery,Grocery,SNC"
+  - button "Expand Weekly Ad Image for Page 18 - Grocery,Grocery,SNC":
+    - img
+- listitem:
+  - button "View Page 19 Offers - Beverage":
+    - img "Beverage"
+  - button "Expand Weekly Ad Image for Page 19 - Beverage":
+    - img
+- listitem:
+  - button "View Page 20 Offers - Grocery,Grocery":
+    - img "Grocery,Grocery"
+  - button "Expand Weekly Ad Image for Page 20 - Grocery,Grocery":
+    - img
+- listitem:
+  - button "View Page 21 Offers - Kitchen & Dining":
+    - img "Kitchen & Dining"
+  - button "Expand Weekly Ad Image for Page 21 - Kitchen & Dining":
+    - img
+- listitem:
+  - button "View Page 22 Offers - Electronics":
+    - img "Electronics"
+  - button "Expand Weekly Ad Image for Page 22 - Electronics":
+    - img
+- listitem:
+  - button "View Page 23 Offers - Electronics,Electronics":
+    - img "Electronics,Electronics"
+  - button "Expand Weekly Ad Image for Page 23 - Electronics,Electronics":
+    - img
+- listitem:
+  - button "View Page 24 Offers - Electronics":
+    - img "Electronics"
+  - button "Expand Weekly Ad Image for Page 24 - Electronics":
+    - img
+- listitem:
+  - button "View Page 25 Offers - Entertainment":
+    - img "Entertainment"
+  - button "Expand Weekly Ad Image for Page 25 - Entertainment":
+    - img
+- listitem:
+  - button "View Page 26 Offers - Sporting Goods":
+    - img "Sporting Goods"
+  - button "Expand Weekly Ad Image for Page 26 - Sporting Goods":
+    - img
+- listitem:
+  - button "View Page 27 Offers - company messaging":
+    - img "company messaging"
+  - button "Expand Weekly Ad Image for Page 27 - company messaging":
+    - img
+- listitem:
+  - button "View Page 28 Offers - Seasonal":
+    - img "Seasonal"
+  - button "Expand Weekly Ad Image for Page 28 - Seasonal":
+    - img
+- listitem:
+  - button "View Page 29 Offers - Kitchen & Dining":
+    - img "Kitchen & Dining"
+  - button "Expand Weekly Ad Image for Page 29 - Kitchen & Dining":
+    - img
+- listitem:
+  - button "View Page 30 Offers - Home":
+    - img "Home"
+  - button "Expand Weekly Ad Image for Page 30 - Home":
+    - img
+- listitem:
+  - button "View Page 31 Offers - Home":
+    - img "Home"
+  - button "Expand Weekly Ad Image for Page 31 - Home":
+    - img
+- listitem:
+  - button "View Page 32 Offers - Home":
+    - img "Home"
+  - button "Expand Weekly Ad Image for Page 32 - Home":
+    - img
+- listitem:
+  - button "View Page 33 Offers - Household Essentials":
+    - img "Household Essentials"
+  - button "Expand Weekly Ad Image for Page 33 - Household Essentials":
+    - img
+- listitem:
+  - button "View Page 34 Offers - Beauty":
+    - img "Beauty"
+  - button "Expand Weekly Ad Image for Page 34 - Beauty":
+    - img
+- listitem:
+  - button "View Page 35 Offers - Beauty":
+    - img "Beauty"
+  - button "Expand Weekly Ad Image for Page 35 - Beauty":
+    - img
+- listitem:
+  - button "View Page 36 Offers - Health":
+    - img "Health"
+  - button "Expand Weekly Ad Image for Page 36 - Health":
+    - img
+- listitem:
+  - button "View Page 37 Offers - company messaging":
+    - img "company messaging"
+  - button "Expand Weekly Ad Image for Page 37 - company messaging":
+    - img
+- listitem:
+  - button "View Page 38 Offers - Baby":
+    - img "Baby"
+  - button "Expand Weekly Ad Image for Page 38 - Baby":
+    - img
+- listitem:
+  - button "View Page 39 Offers - company messaging":
+    - img "company messaging"
+  - button "Expand Weekly Ad Image for Page 39 - company messaging":
+    - img
+- button "Navigate Forward":
+  - img
+- heading "Get top deals, latest trends, and more." [level=3]
+- textbox "Email address"
+- text: Email address
+- alert
+- button "Sign up"
+- link "privacy policy - opens in a new window":
+  - text: Privacy policy
+  - img
+- heading "Footer" [level=2]
+- alert
+```
+
+# Test source
+
+```ts
+   1 | import { BrowserContext, Locator, Page } from '@playwright/test';
+   2 | import * as fs from 'fs';
+   3 |
+   4 |
+   5 | export class DealsPage {
+   6 |
+   7 |     private get topDeals(): Locator {
+   8 |         return this.page.locator('//span[text()="Top Deals"]');
+   9 |     }
+  10 |
+  11 |     private get targetCircleDeals(): Locator {
+  12 |         return this.page.locator('//span[text()="Target Circle Deals"]');
+  13 |     }
+  14 |
+  15 |     private get weeklyAd(): Locator {
+  16 |         return this.page.locator('//span[text()="Weekly Ad"]');
+  17 |     }
+  18 |
+  19 |     private get clearance(): Locator {
+  20 |         return this.page.locator('//span[@class="styles_wrapper__YYaWP" and text()="Clearance"]');
+  21 |     }
+  22 |
+  23 |     private get topDealsHeader(): Locator {
+  24 |         return this.page.locator('//h1[text()="Top Deals"]');
+  25 |     }
+  26 |
+  27 |     private get targetCircleDealsHeader(): Locator {
+  28 |         return this.page.locator('//div[h1[text()="Target Circle™ Deals"]]');
+  29 |     }
+  30 |
+  31 |     private get weeklyAdHeader(): Locator {
+  32 |         return this.page.locator('//div[@data-test="global-header"]//div[h2[text()="Weekly Ad "]]');
+  33 |     }
+  34 |
+  35 |     private get clearanceHeader(): Locator {
+  36 |         return this.page.locator('//div[@data-component-id="WEB-c_web_pagetitle_v01"]//div[h1[text()="Clearance"]]');
+  37 |     }
+  38 |
+  39 |     public constructor(private page: Page, private context: BrowserContext) {}
+  40 |
+  41 |     public async goToTopDeals(): Promise<void> {
+  42 |         await this.topDeals.click();
+  43 |         await this.topDealsHeader.waitFor({timeout: 5000});
+  44 |
+  45 |         const browserState = await this.context.storageState();
+  46 |         fs.writeFileSync('browser-context.json', JSON.stringify(browserState, null, 2));
+  47 |     }
+  48 |
+  49 |     public isTopDealsHeaderVisible(): Locator {
+  50 |         return this.topDealsHeader;
+  51 |     }
+  52 |
+  53 |     public async goToTargetCircleDeals(): Promise<void> {
+  54 |         await this.targetCircleDeals.click();
+  55 |         await this.targetCircleDealsHeader.waitFor({timeout: 5000});
+  56 |
+  57 |         const browserState = await this.context.storageState();
+  58 |         fs.writeFileSync('browser-context.json', JSON.stringify(browserState, null, 2));
+  59 |     }
+  60 |
+  61 |     public isTargetCircleDealsHeaderVisible(): Locator {
+  62 |         return this.targetCircleDealsHeader;
+  63 |     }
+  64 |
+  65 |     public async goToWeeklyAd(): Promise<void> {
+  66 |         await this.weeklyAd.click();
+> 67 |         await this.weeklyAdHeader.waitFor({timeout: 5000});
+     |                                   ^ TimeoutError: locator.waitFor: Timeout 5000ms exceeded.
+  68 |
+  69 |         const browserState = await this.context.storageState();
+  70 |         fs.writeFileSync('browser-context.json', JSON.stringify(browserState, null, 2));
+  71 |     }
+  72 |
+  73 |     public isWeeklyAdHeaderVisible(): Locator {
+  74 |         return this.weeklyAdHeader;
+  75 |     }
+  76 |
+  77 |     public async goToClearance(): Promise<void> {
+  78 |         await this.clearance.click();
+  79 |         await this.clearanceHeader.waitFor({timeout: 5000});
+  80 |
+  81 |         const browserState = await this.context.storageState();
+  82 |         fs.writeFileSync('browser-context.json', JSON.stringify(browserState, null, 2));
+  83 |     }
+  84 |
+  85 |     public isClearanceHeaderVisible(): Locator {
+  86 |         return this.clearanceHeader;
+  87 |     }
+  88 | }
+  89 |
+```
