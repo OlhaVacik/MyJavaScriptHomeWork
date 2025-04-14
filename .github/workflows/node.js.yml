@@ -29,7 +29,7 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'npm'
+        # cache: 'npm'
     - name: install packages
       run: npm ci
       working-directory: ${{ env.BUILD_FOLDER}}
@@ -39,4 +39,3 @@ jobs:
     - name: run playwright tests
       run: npm run test
       working-directory: ${{ env.BUILD_FOLDER}}
-      
