@@ -12,6 +12,10 @@ on:
 jobs:
   build:
 
+    env:
+      BUILD_FOLDER: ./hw-18-playwright-e2e-web-ui
+      HEADLESS: true
+
     runs-on: ubuntu-latest
 
     strategy:
@@ -26,5 +30,13 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm ci
-   
+    - name: install packages
+      run: npm ci
+      working-directory: ${{ env.BUILD_FOLDER}}
+    - name: Install playwright browsers
+      run: npx playwright install --with-deps
+      working-directory: ${{ env.BUILD_FOLDER}}
+    - name: run playwright tests
+      run: npm run test
+      working-directory: ${{ env.BUILD_FOLDER}}
+      
