@@ -1,2 +1,0 @@
-[clear Cookies] Clearing all cookies and storage data
-[login] Navigating to Target

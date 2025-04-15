@@ -1,8 +1,11 @@
-
+.vscode
 # Playwright
 node_modules/
 /test-results/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
-node_modules/
+/browser-context.json
+# Allure
+allure-results/
+allure-report/
