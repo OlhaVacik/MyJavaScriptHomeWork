@@ -1,0 +1,14 @@
+node_modules/
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+node_modules/
+/browser-context.json
+# Artifacts
+obs-artifacts/
+e2e/
+#Logs
+local.log
+log/
