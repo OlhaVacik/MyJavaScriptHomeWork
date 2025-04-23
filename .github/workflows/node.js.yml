@@ -39,3 +39,4 @@ jobs:
     - name: run playwright tests
       run: npm run test
       working-directory: ${{ env.BUILD_FOLDER}}
+      if: always()
