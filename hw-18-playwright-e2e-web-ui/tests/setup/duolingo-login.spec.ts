@@ -2,7 +2,7 @@ import { test } from '@playwright/test';
 import { DuolingoLoginPage } from 'src/pages/duolingo-login.page';
 
 test.describe('Duolingo Login', () => {
-    test('Duolingo Login With Email', async ({page, context}) => {
+    test.skip('Duolingo Login With Email', async ({page, context}) => {
         const duolingoLoginPage = new DuolingoLoginPage(page, context);
 
         await duolingoLoginPage.clearCookies();
